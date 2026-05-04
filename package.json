@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "mhtml-to-html": "^2.0.1"
+  }
+}
