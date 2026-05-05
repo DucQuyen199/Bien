@@ -1,0 +1,274 @@
+/* ==========================================
+   TRAVEL PAGE STYLES - travel.html
+   ========================================== */
+
+/* Featured Article */
+.featured-article {
+    padding: 40px 0;
+}
+
+.feature-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.feature-main .image-wrapper {
+    height: 400px;
+}
+
+.feature-main h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    margin: 15px 0;
+}
+
+.feature-main h2 a:hover {
+    color: var(--accent-color);
+}
+
+.feature-main .excerpt {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Region Tabs */
+.region-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+.region-tab {
+    padding: 10px 25px;
+    border: 1px solid var(--border-color);
+    background: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.region-tab:hover,
+.region-tab.active {
+    background: var(--text-color);
+    color: white;
+    border-color: var(--text-color);
+}
+
+.region-content {
+    display: none;
+}
+
+.region-content.active {
+    display: block;
+}
+
+.region-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.region-card {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.region-card .image-wrapper {
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+.region-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.region-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.region-card p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-bottom: 10px;
+}
+
+/* Experiences Section */
+.experiences-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.experience-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.experience-card .image-wrapper {
+    height: 200px;
+    position: relative;
+}
+
+.experience-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--accent-color);
+    color: white;
+    padding: 5px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.experience-card .content {
+    padding: 25px;
+}
+
+.experience-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.experience-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.experience-card p {
+    font-size: 0.95rem;
+    color: var(--gray-medium);
+    margin-bottom: 15px;
+}
+
+.experience-meta {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Luxury Section */
+.luxury-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.luxury-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.luxury-card {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.luxury-card .image-wrapper {
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.luxury-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.luxury-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.luxury-card p {
+    font-size: 0.95rem;
+    color: var(--gray-medium);
+}
+
+/* Tips Section */
+.tips-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.tip-card {
+    text-align: center;
+    padding: 30px;
+    background: var(--gray-light);
+    border-radius: 4px;
+}
+
+.tip-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.tip-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.tip-card p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+}
+
+/* More Articles Grid */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .feature-main {
+        grid-template-columns: 1fr;
+    }
+    
+    .region-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .experiences-grid,
+    .luxury-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .region-grid,
+    .experiences-grid,
+    .luxury-grid,
+    .tips-grid,
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .region-tabs {
+        justify-content: flex-start;
+    }
+}

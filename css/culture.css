@@ -1,0 +1,465 @@
+/* ==========================================
+   CULTURE PAGE STYLES - culture.html
+   ========================================== */
+
+/* Featured Article */
+.featured-article {
+    padding: 40px 0;
+}
+
+.feature-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.feature-main .image-wrapper {
+    height: 400px;
+}
+
+.feature-main h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    margin: 15px 0;
+}
+
+.feature-main h2 a:hover {
+    color: var(--accent-color);
+}
+
+.feature-main .excerpt {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Crafts Section */
+.crafts-section {
+    padding: 40px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.crafts-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+}
+
+.craft-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.craft-card .image-wrapper {
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.craft-card .content {
+    padding: 25px;
+}
+
+.craft-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.craft-card h3 a:hover {
+    color: var(--accent-color);
+}
+
+.craft-card > p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.craft-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.craft-item {
+    padding: 20px;
+    background: var(--gray-light);
+    border-radius: 4px;
+}
+
+.craft-item h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.craft-item h4 a:hover {
+    color: var(--accent-color);
+}
+
+.craft-item > p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+}
+
+/* Mythology Section */
+.mythology-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.mythology-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.myth-card {
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.myth-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.myth-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.myth-deity {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.myth-card > p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-bottom: 15px;
+}
+
+.myth-card ul {
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.myth-card li {
+    padding: 5px 0;
+    border-top: 1px solid #eee;
+}
+
+.myth-card li strong {
+    color: var(--text-color);
+}
+
+/* Art Section */
+.art-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.art-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.art-period {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 30px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.art-era {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.art-content h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.art-content h4 a:hover {
+    color: var(--accent-color);
+}
+
+.art-content > p {
+    font-size: 0.95rem;
+    color: var(--gray-medium);
+    margin-bottom: 15px;
+}
+
+.art-examples {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.art-examples span {
+    padding: 5px 15px;
+    background: var(--gray-light);
+    font-size: 0.85rem;
+    border-radius: 20px;
+}
+
+/* Music Section */
+.music-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+}
+
+.music-card.main {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.music-card.main .image-wrapper {
+    height: 300px;
+}
+
+.music-card.main .content {
+    padding: 25px;
+}
+
+.music-card.main h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.music-card.main h3 a:hover {
+    color: var(--accent-color);
+}
+
+.music-card.main > p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.music-list {
+    padding: 25px;
+    background: var(--gray-light);
+    border-radius: 4px;
+}
+
+.music-list h4 {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.music-list ul {
+    list-style: none;
+}
+
+.music-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.music-list li:last-child {
+    border-bottom: none;
+}
+
+.music-list li a:hover {
+    color: var(--accent-color);
+}
+
+/* Festivals Section */
+.festivals-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.festivals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.festival-card {
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.festival-date {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.festival-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.festival-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.festival-card > p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+}
+
+/* Literature Section */
+.literature-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.literature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.book-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.book-cover {
+    width: 60px;
+    height: 80px;
+    background: var(--gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.book-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.book-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.book-card .author {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.book-card > p {
+    font-size: 0.85rem;
+    color: var(--gray-medium);
+}
+
+/* Architecture Section */
+.architecture-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.architecture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.arch-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.arch-card .image-wrapper {
+    height: 200px;
+}
+
+.arch-card .content {
+    padding: 20px;
+}
+
+.arch-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.arch-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.arch-card > p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-bottom: 10px;
+}
+
+.arch-card > p:last-of-type {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .feature-main,
+    .crafts-grid,
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mythology-grid,
+    .festivals-grid,
+    .architecture-grid,
+    .literature-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .art-period {
+        grid-template-columns: 1fr;
+    }
+    
+    .art-era {
+        text-align: left;
+    }
+    
+    .mythology-grid,
+    .festivals-grid,
+    .architecture-grid,
+    .literature-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULINARY | OCEAN & SEAFOOD</title>
+    <meta name="description" content="Explore the finest seafood recipes, culinary techniques, and the stories behind the world's greatest ocean-to-table dining experiences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/culinary.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="date-time" id="current-date-time">
+                May 5, 2026 | 10:10 AM
+            </div>
+            <div class="top-links">
+                <a href="#">Log In</a>
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 id="site-logo"><a href="index.html">OCEAN & SEAFOOD</a></h1>
+                <p class="subtitle">A PREMIUM JOURNAL ON MARINE CULTURE & CULINARY</p>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="travel.html">TRAVEL</a></li>
+                    <li><a href="culinary.html" class="active">CULINARY</a></li>
+                    <li><a href="environment.html">ENVIRONMENT</a></li>
+                    <li><a href="people.html">PEOPLE</a></li>
+                    <li><a href="culture.html">CULTURE</a></li>
+                    <li><a href="opinion.html">OPINION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero culinary-hero">
+            <article class="featured-main">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Gourmet Seafood Platter">
+                </div>
+                <div class="content">
+                    <span class="category">FEATURED</span>
+                    <h2>The Art of Sushi: Inside Japan's Most Exclusive Omakase Experiences</h2>
+                    <p class="meta">By Chef Yuki Tanaka | 12 min read</p>
+                    <p class="excerpt">In Tokyo's hidden basement restaurants, master sushi chefs spend decades perfecting a single craft. We were granted rare access to witness the artistry behind the world's most sought-after dining experiences...</p>
+                    <a href="#" class="read-more read-article" data-article="culinary-1">Continue Reading →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Intro Text -->
+        <section class="section-intro">
+            <h2 class="section-main-title">Seafood Culinary Excellence</h2>
+            <p>From traditional fishing village recipes passed down through generations to avant-garde molecular gastronomy, explore the diverse and delicious world of seafood cuisine.</p>
+        </section>
+
+        <!-- Featured Chef -->
+        <section class="chef-spotlight">
+            <h3 class="section-title">Chef Spotlight</h3>
+            <article class="chef-feature">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Chef">
+                </div>
+                <div class="content">
+                    <span class="category">PROFILE</span>
+                    <h4>Chef Elena Moreau: Revolutionizing French Seafood Cuisine</h4>
+                    <p class="excerpt">Born in Marseille and trained in Paris, Chef Elena Moreau has spent 25 years elevating traditional French seafood techniques to new artistic heights. Her restaurant, "Le Grand Bleu," has earned three Michelin stars and a reputation for sustainable sourcing.</p>
+                    <p>"The ocean gives us the finest ingredients on Earth. My job is simply to honor that gift with respect and creativity," says Moreau. Her signature dish, a deconstructed bouillabaisse featuring 12 different species of fish in a single bite, has become legendary among food enthusiasts worldwide.</p>
+                    <a href="#" class="read-link read-article" data-article="culinary-1">Read Full Interview →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Recipe Section -->
+        <section class="recipes-section">
+            <h3 class="section-title">Featured Recipes</h3>
+            <div class="recipe-tabs">
+                <button class="recipe-tab active" data-category="all">All</button>
+                <button class="recipe-tab" data-category="appetizers">Appetizers</button>
+                <button class="recipe-tab" data-category="mains">Main Courses</button>
+                <button class="recipe-tab" data-category="soups">Soups & Stews</button>
+                <button class="recipe-tab" data-category="desserts">Desserts</button>
+            </div>
+            
+            <div class="recipes-grid">
+                <article class="recipe-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Lobster">
+                        <div class="recipe-time">45 min</div>
+                    </div>
+                    <div class="content">
+                        <span class="category">MAIN COURSE</span>
+                        <h4>Butter-Poached Maine Lobster with Truffle Risotto</h4>
+                        <p>Succulent lobster tail poached in brown butter, served atop creamy truffle-infused Arborio rice with microgreens.</p>
+                        <div class="recipe-meta">
+                            <span>⭐ 4.9</span>
+                            <span>• Difficulty: Advanced</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="recipe-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Oysters">
+                        <div class="recipe-time">15 min</div>
+                    </div>
+                    <div class="content">
+                        <span class="category">APPETIZER</span>
+                        <h4>Fresh Oysters with Mignonette and Champagne Granite</h4>
+                        <p>Half-shell oysters topped with house-made champagne mignonette and refreshing champagne granite ice.</p>
+                        <div class="recipe-meta">
+                            <span>⭐ 4.8</span>
+                            <span>• Difficulty: Easy</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="recipe-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Bouillabaisse">
+                        <div class="recipe-time">90 min</div>
+                    </div>
+                    <div class="content">
+                        <span class="category">SOUP</span>
+                        <h4>Traditional Provençal Bouillabaisse</h4>
+                        <p>Marseille's legendary seafood stew with rockfish, shellfish, and saffron, served with crusty rouille-topped bread.</p>
+                        <div class="recipe-meta">
+                            <span>⭐ 4.7</span>
+                            <span>• Difficulty: Intermediate</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="recipe-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Sashimi">
+                        <div class="recipe-time">20 min</div>
+                    </div>
+                    <div class="content">
+                        <span class="category">APPETIZER</span>
+                        <h4>Chef's Sashimi Selection: Tuna, Salmon & Yellowtail</h4>
+                        <p>Precision-cut sashimi-grade fish with house-made soy, fresh wasabi, and pickled ginger.</p>
+                        <div class="recipe-meta">
+                            <span>⭐ 4.9</span>
+                            <span>• Difficulty: Intermediate</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="recipe-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Paella">
+                        <div class="recipe-time">60 min</div>
+                    </div>
+                    <div class="content">
+                        <span class="category">MAIN COURSE</span>
+                        <h4>Spanish Seafood Paella with Allocated Squid and Mussels</h4>
+                        <p>Authentic Valencia-style paella with bomba rice, saffron, seafood, and socarrat crispy bottom.</p>
+                        <div class="recipe-meta">
+                            <span>⭐ 4.8</span>
+                            <span>• Difficulty: Intermediate</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="recipe-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Salmon">
+                        <div class="recipe-time">30 min</div>
+                    </div>
+                    <div class="content">
+                        <span class="category">MAIN COURSE</span>
+                        <h4>Cedar-Planked Wild Salmon with Honey Glaze</h4>
+                        <p>Sustainable Pacific salmon slow-cooked on aromatic cedar with maple honey glaze and roasted vegetables.</p>
+                        <div class="recipe-meta">
+                            <span>⭐ 4.6</span>
+                            <span>• Difficulty: Easy</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Secret Recipes from Coastal Villages -->
+        <section class="secret-recipes">
+            <h3 class="section-title">Secret Recipes from Coastal Villages</h3>
+            <div class="secret-grid">
+                <article class="secret-card main">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Portuguese Seafood">
+                    </div>
+                    <div class="content">
+                        <span class="category">PORTUGAL</span>
+                        <h4>Cataplana: The Algarve's Best-Kept Culinary Secret</h4>
+                        <p class="excerpt">In the sun-drenched fishing villages of Portugal's Algarve coast, families have been cooking cataplana for generations. This copper clamshell pot transforms simple seafood into extraordinary meals.</p>
+                        <p>The dish typically combines clams, prawns, ham, and potatoes with tomatoes, onions, and white wine. The tight-sealing cataplana traps steam and aromas, infusing every ingredient with intense flavor.</p>
+                        <p>"My grandmother taught me that patience is the secret ingredient," says Maria Santos, who continues the family tradition in her restaurant overlooking Lagos harbor. "Good seafood doesn't need fancy techniques. It needs respect."</p>
+                    </div>
+                </article>
+                <div class="secret-list">
+                    <article class="secret-item">
+                        <h4>🇮🇹 Italy: Cioppino (San Francisco Style)</h4>
+                        <p>Italian-American fishermen created this tomato-based stew in the 1800s, loaded with Dungeness crab, halibut, and clams.</p>
+                    </article>
+                    <article class="secret-item">
+                        <h4>🇹🇭 Thailand: Tom Yum Goong</h4>
+                        <p>The fiery, sour soup from Bangkok's floating markets combines tiger prawns with lemongrass, galangal, and bird's eye chilies.</p>
+                    </article>
+                    <article class="secret-item">
+                        <h4>🇳🇴 Norway: Fårikål with Stockfish</h4>
+                        <p>Norwegian coastal communities created this hearty stew combining stockfish (dried cod) with cabbage and potatoes.</p>
+                    </article>
+                    <article class="secret-item">
+                        <h4>🇭🇷 Croatia: Gregada (Dubrovnik Style)</h4>
+                        <p>The Croatian answer to bouillabaisse, this salt cod stew is traditionally made without tomatoes, relying on wine and potatoes.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seafood Species Guide -->
+        <section class="species-guide">
+            <h3 class="section-title">Seafood Species Guide</h3>
+            <p class="section-intro-text">Understanding the fish on your plate is the first step to sustainable eating. Our comprehensive guide helps you make informed choices.</p>
+            <div class="species-grid">
+                <article class="species-card">
+                    <div class="species-header">
+                        <h4>Atlantic Salmon</h4>
+                        <span class="sustainability high">Good Choice</span>
+                    </div>
+                    <p>Known for its rich, fatty flesh and distinctive pink-orange color. Wild-caught from Alaska and Chile offers the best sustainability ratings.</p>
+                    <div class="species-details">
+                        <span><strong>Flavor:</strong> Rich, buttery</span>
+                        <span><strong>Texture:</strong> Firm, flaky</span>
+                        <span><strong>Best cooking:</strong> Grilled, pan-seared, smoked</span>
+                    </div>
+                </article>
+                <article class="species-card">
+                    <div class="species-header">
+                        <h4>Bluefin Tuna</h4>
+                        <span class="sustainability medium">Moderate</span>
+                    </div>
+                    <p>The king of sushi, prized for its high fat content (shimofuri) and rich, melt-in-your-mouth texture. Requires careful sourcing.</p>
+                    <div class="species-details">
+                        <span><strong>Flavor:</strong> Deep, umami-rich</span>
+                        <span><strong>Texture:</strong> Fatty, buttery</span>
+                        <span><strong>Best cooking:</strong> Sashimi, seared, grilled</span>
+                    </div>
+                </article>
+                <article class="species-card">
+                    <div class="species-header">
+                        <h4>Dungeness Crab</h4>
+                        <span class="sustainability high">Best Choice</span>
+                    </div>
+                    <p>Sweet, delicate crab meat from the Pacific Northwest. Sustainably managed with strict catch limits and seasonal closures.</p>
+                    <div class="species-details">
+                        <span><strong>Flavor:</strong> Sweet, delicate</span>
+                        <span><strong>Texture:</strong> Flaky, tender</span>
+                        <span><strong>Best cooking:</strong> Steamed, cracked, in salads</span>
+                    </div>
+                </article>
+                <article class="species-card">
+                    <div class="species-header">
+                        <h4>Chilean Sea Bass</h4>
+                        <span class="sustainability low">Avoid</span>
+                    </div>
+                    <p>Despite its buttery taste, this species suffers from overfishing and bycatch issues. Choose insteads: sablefish or Alaska pollock.</p>
+                    <div class="species-details">
+                        <span><strong>Flavor:</strong> Buttery, rich</span>
+                        <span><strong>Texture:</strong> Dense, oily</span>
+                        <span><strong>Best cooking:</strong> Pan-seared, baked</span>
+                    </div>
+                </article>
+                <article class="species-card">
+                    <div class="species-header">
+                        <h4>Maine Lobster</h4>
+                        <span class="sustainability high">Best Choice</span>
+                    </div>
+                    <p>Sustainably harvested from cold North Atlantic waters with excellent population management. Sweet, tender tail meat.</p>
+                    <div class="species-details">
+                        <span><strong>Flavor:</strong> Sweet, briny</span>
+                        <span><strong>Texture:</strong> Firm, succulent</span>
+                        <span><strong>Best cooking:</strong> Steamed, grilled, in rolls</span>
+                    </div>
+                </article>
+                <article class="species-card">
+                    <div class="species-header">
+                        <h4>Alaskan Pollock</h4>
+                        <span class="sustainability high">Best Choice</span>
+                    </div>
+                    <p>One of the most sustainable fish options, forming the backbone of America's seafood industry. Mild, versatile, and abundant.</p>
+                    <div class="species-details">
+                        <span><strong>Flavor:</strong> Mild, clean</span>
+                        <span><strong>Texture:</strong> Soft, flaky</span>
+                        <span><strong>Best cooking:</strong> Fish & chips, sandwiches, surimi</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Culinary Techniques -->
+        <section class="techniques-section">
+            <h3 class="section-title">Master Seafood Techniques</h3>
+            <div class="techniques-grid">
+                <article class="technique-card">
+                    <div class="technique-icon">🔥</div>
+                    <h4>Perfect Grilling</h4>
+                    <p>High heat, oiled grates, and not moving the fish too soon. Learn the perfect char marks without overcooking delicate fillets.</p>
+                </article>
+                <article class="technique-card">
+                    <div class="technique-icon">🧊</div>
+                    <h4>Salt-Crust Baking</h4>
+                    <p>Ancient technique of baking fish enclosed in salt, sealing in moisture and creating an spectacular presentation.</p>
+                </article>
+                <article class="technique-card">
+                    <div class="technique-icon">🫗</div>
+                    <h4>Mastering Poaching</h4>
+                    <p>Gentle, controlled temperatures in flavored liquid deliver impossibly tender results for delicate white fish.</p>
+                </article>
+                <article class="technique-card">
+                    <div class="technique-icon">🍣</div>
+                    <h4>Sushi Rice Fundamentals</h4>
+                    <p>The foundation of great sushi: perfect rice seasoning, temperature control, and knife skills for slicing fish.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- World Cuisines -->
+        <section class="cuisines-section">
+            <h3 class="section-title">Seafood Through World Cuisines</h3>
+            <div class="cuisines-grid">
+                <article class="cuisine-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Japanese">
+                    </div>
+                    <h4>🇯🇵 Japanese</h4>
+                    <p>Sushi, sashimi, tempura, and the art of umami. Japan's island nation has refined seafood to its purest expressions.</p>
+                    <ul>
+                        <li>Traditional: Omakase, Edomae sushi</li>
+                        <li>Modern: Neo-Japanese fusion</li>
+                        <li>Techniques: Knife skills, aging (jukusei)</li>
+                    </ul>
+                </article>
+                <article class="cuisine-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Mediterranean">
+                    </div>
+                    <h4>🌊 Mediterranean</h4>
+                    <p>Olive oil, garlic, tomatoes, and fresh catch. From Greece to Morocco, the Mediterranean celebrates seafood with simple, vibrant flavors.</p>
+                    <ul>
+                        <li>Traditional: Grilled whole fish, marinated octopus</li>
+                        <li>Modern: Revuelto de mariscos</li>
+                        <li>Techniques: Grilling, marinating, ceviche</li>
+                    </ul>
+                </article>
+                <article class="cuisine-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1569058242567-93de6f36f8eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Southeast Asian">
+                    </div>
+                    <h4>🌶️ Southeast Asian</h4>
+                    <p>Bold herbs, spicy chilies, and tangy citrus define Thai, Vietnamese, and Indonesian seafood cooking.</p>
+                    <ul>
+                        <li>Traditional: Tom Yum, mee hoon</li>
+                        <li>Modern: Creative fusion restaurants</li>
+                        <li>Techniques: Wok hei, fresh herbs</li>
+                    </ul>
+                </article>
+                <article class="cuisine-card">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Spanish">
+                    </div>
+                    <h4>🇪🇸 Spanish</h4>
+                    <p>From Basque pintxos to Catalan fideuà, Spain's coastal regions have developed some of the world's most inventive seafood dishes.</p>
+                    <ul>
+                        <li>Traditional: Pulpo a la gallega, paella</li>
+                        <li>Modern: avant-garde molecular</li>
+                        <li>Techniques: Open-fire cooking, saffron</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Restaurant Reviews -->
+        <section class="reviews-section">
+            <h3 class="section-title">Restaurant Reviews</h3>
+            <div class="reviews-grid">
+                <article class="review-card featured">
+                    <div class="review-badge">⭐⭐⭐ MICHELIN</div>
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Restaurant">
+                    </div>
+                    <div class="content">
+                        <span class="category">REVIEW</span>
+                        <h4>Le Grand Bleu, Paris</h4>
+                        <p class="review-rating">⭐⭐⭐ (3 Michelin Stars)</p>
+                        <p class="excerpt">Chef Elena Moreau's temple of seafood excellence delivers an experience that transcends mere dining. Each course tells a story of the ocean, prepared with technical mastery and artistic vision.</p>
+                        <p>Read the full review: 95/100 - Exceptional</p>
+                    </div>
+                </article>
+                <div class="review-list">
+                    <article class="review-item">
+                        <h4>Sukiyabashi Jiro, Tokyo</h4>
+                        <p class="review-rating">⭐⭐⭐ (3 Michelin Stars)</p>
+                        <p>"The 20-course omakase is a masterclass in perfection..."</p>
+                        <span class="review-score">94/100</span>
+                    </article>
+                    <article class="review-item">
+                        <h4>Eleven Madison Park, New York</h4>
+                        <p class="review-rating">⭐⭐⭐ (3 Michelin Stars)</p>
+                        <p>"Plant-based seafood alternatives achieve new heights..."</p>
+                        <span class="review-score">92/100</span>
+                    </article>
+                    <article class="review-item">
+                        <h4>Geranium, Copenhagen</h4>
+                        <p class="review-rating">⭐⭐⭐ (3 Michelin Stars)</p>
+                        <p>"Rasmus Kofoed's seafood tasting menu is simply transcendent..."</p>
+                        <span class="review-score">93/100</span>
+                    </article>
+                    <article class="review-item">
+                        <h4>Azurmendi, Basque Country</h4>
+                        <p class="review-rating">⭐⭐⭐ (3 Michelin Stars)</p>
+                        <p>"Eneko Atxa's theatrical seafood journey is unforgettable..."</p>
+                        <span class="review-score">91/100</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Articles -->
+        <section class="more-articles">
+            <h3 class="section-title">More Culinary Stories</h3>
+            <div class="articles-grid">
+                <article class="news-item">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ceviche">
+                    </div>
+                    <div class="content">
+                        <span class="category">TECHNIQUE</span>
+                        <h4>The Science of Ceviche: Why Citrus "Cooks" Fish</h4>
+                        <p class="meta">Dec 8 . 6 min read</p>
+                        <p class="summary">Understanding the chemistry behind ceviche reveals why this ancient technique transforms raw fish into tender, flavorful delicacy.</p>
+                    </div>
+                </article>
+                <article class="news-item">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1510130387422-82bed34b37e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Smoked Salmon">
+                    </div>
+                    <div class="content">
+                        <span class="category">PROCESS</span>
+                        <h4>From Ocean to Table: The Journey of Smoked Salmon</h4>
+                        <p class="meta">Dec 5 . 8 min read</p>
+                        <p class="summary">Follow the centuries-old process of cold-smoking that creates Scotland's most prized seafood export.</p>
+                    </div>
+                </article>
+                <article class="news-item">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Crab">
+                    </div>
+                    <div class="content">
+                        <span class="category">FESTIVAL</span>
+                        <h4>Crab Festivals Around the World You Must Attend</h4>
+                        <p class="meta">Dec 2 . 7 min read</p>
+                        <p class="summary">From Maryland's Crab Festival to Singapore's chili crab craze, these celebrations are seafood paradise.</p>
+                    </div>
+                </article>
+                <article class="news-item">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Plating">
+                    </div>
+                    <div class="content">
+                        <span class="category">ART</span>
+                        <h4>The Art of Plating: Making Seafood Beautiful</h4>
+                        <p class="meta">Nov 28 . 10 min read</p>
+                        <p class="summary">How top chefs use negative space, color theory, and texture to create edible art with seafood.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ARTICLE DETAIL VIEW -->
+    <div id="article-view" class="hidden">
+        <article class="container article-detail">
+            <header class="article-header">
+                <span class="category" id="art-category">CULINARY</span>
+                <h1 id="art-title">Article Title</h1>
+                <p class="article-meta" id="art-meta">By Author | Published Date | Read Time</p>
+                <div class="article-hero-image">
+                    <img id="art-image" src="" alt="Article Hero">
+                </div>
+            </header>
+            <div class="article-content">
+                <div class="article-body" id="art-body">
+                    <p class="lead">Article lead paragraph will appear here.</p>
+                    <p>Article content goes here...</p>
+                </div>
+                <div class="article-footer">
+                    <div class="tags">
+                        <span>#Culinary</span><span>#Seafood</span><span>#Recipes</span>
+                    </div>
+                    <div class="share-buttons">
+                        <p>Share:</p>
+                        <button>Facebook</button>
+                        <button>Twitter</button>
+                        <button>LinkedIn</button>
+                    </div>
+                </div>
+                <section class="comments-section">
+                    <h3>Comments</h3>
+                    <div class="comment-list" id="comment-list"></div>
+                    <div class="add-comment">
+                        <h4>Leave a Comment</h4>
+                        <form class="comment-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Share your thoughts..." rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Post Comment</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </div>
+
+    <section class="newsletter">
+        <div class="container">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest recipes, chef interviews, and culinary trends delivered to your inbox.</p>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h2>OCEAN & SEAFOOD</h2>
+                    <p>A PREMIUM JOURNAL ON MARINE CULTURE & CULINARY</p>
+                    <p class="copyright">© 2026 by Ocean & Seafood. An Inkside Publication.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="travel.html">Travel</a></li>
+                        <li><a href="culinary.html">Culinary</a></li>
+                        <li><a href="environment.html">Environment</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="opinion.html">Opinion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

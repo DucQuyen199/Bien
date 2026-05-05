@@ -1,0 +1,481 @@
+/* ==========================================
+   PEOPLE PAGE STYLES - people.html
+   ========================================== */
+
+/* Featured Article */
+.featured-article {
+    padding: 40px 0;
+}
+
+.feature-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.feature-main .image-wrapper {
+    height: 400px;
+}
+
+.feature-main h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    margin: 15px 0;
+}
+
+.feature-main h2 a:hover {
+    color: var(--accent-color);
+}
+
+.feature-main .excerpt {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Profiles Section */
+.profiles-section {
+    padding: 40px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.profile-card.large {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.profile-card.large .image-wrapper {
+    height: 400px;
+}
+
+.profile-content {
+    padding: 30px;
+}
+
+.profile-content h3 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.profile-content h3 a:hover {
+    color: var(--accent-color);
+}
+
+.profile-content > p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.profile-quote {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    border-left: 4px solid var(--accent-color);
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-mini {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.profile-mini .image-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profile-mini .content h4 {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.profile-mini .content h4 a:hover {
+    color: var(--accent-color);
+}
+
+.profile-mini .content p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+}
+
+/* Haenyeo Section */
+.haenyeo-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.haenyeo-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.haenyeo-feature .image-wrapper {
+    height: 500px;
+}
+
+.haenyeo-feature h3 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.haenyeo-feature h3 a:hover {
+    color: var(--accent-color);
+}
+
+.haenyeo-feature > p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Scientists Section */
+.scientists-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.scientists-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.scientist-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.scientist-card .image-wrapper {
+    height: 250px;
+}
+
+.scientist-card .content {
+    padding: 25px;
+}
+
+.scientist-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.scientist-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.scientist-card .title {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.scientist-card > p {
+    font-size: 0.95rem;
+    color: var(--gray-medium);
+    margin-bottom: 10px;
+}
+
+/* Communities Section */
+.communities-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.communities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.community-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.community-card .image-wrapper {
+    height: 250px;
+}
+
+.community-card .content {
+    padding: 25px;
+}
+
+.community-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.community-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.community-card > p {
+    font-size: 0.95rem;
+    color: var(--gray-medium);
+}
+
+/* Rising Section */
+.rising-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.rising-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+}
+
+.rising-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.rising-card .image-wrapper {
+    height: 300px;
+}
+
+.rising-card .content {
+    padding: 30px;
+}
+
+.rising-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.rising-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.rising-card > p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.rising-profiles {
+    padding: 25px;
+    background: var(--gray-light);
+    border-radius: 4px;
+}
+
+.rising-profiles h4 {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.rising-profile {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.rising-profile:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.rising-profile h5 {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.rising-profile h5 a:hover {
+    color: var(--accent-color);
+}
+
+.rising-profile > p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-bottom: 5px;
+}
+
+/* Generations Timeline */
+.generations-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.generations-timeline {
+    position: relative;
+    padding-left: 120px;
+}
+
+.generations-timeline::before {
+    content: '';
+    position: absolute;
+    left: 90px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.generation-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.gen-decade {
+    position: absolute;
+    left: -120px;
+    width: 80px;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-family: var(--font-serif);
+}
+
+.generation-item::before {
+    content: '';
+    position: absolute;
+    left: -34px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+.gen-content h4 {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.gen-content h4 a:hover {
+    color: var(--accent-color);
+}
+
+.gen-content > p {
+    font-size: 0.95rem;
+    color: var(--gray-medium);
+}
+
+/* Essays Section */
+.essays-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.essays-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.essay-card {
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.essay-card .category {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.essay-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.essay-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.essay-card .author {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.essay-card > p {
+    font-size: 0.95rem;
+    color: var(--gray-medium);
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .feature-main,
+    .profiles-grid,
+    .rising-grid,
+    .haenyeo-feature {
+        grid-template-columns: 1fr;
+    }
+    
+    .scientists-grid,
+    .essays-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .generations-timeline {
+        padding-left: 40px;
+    }
+    
+    .generations-timeline::before {
+        left: 10px;
+    }
+    
+    .generation-item::before {
+        left: -34px;
+    }
+    
+    .gen-decade {
+        position: static;
+        width: auto;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .communities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .scientists-grid,
+    .essays-grid {
+        grid-template-columns: 1fr;
+    }
+}

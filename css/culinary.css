@@ -1,0 +1,464 @@
+/* ==========================================
+   CULINARY PAGE STYLES - culinary.html
+   ========================================== */
+
+/* Chef Spotlight */
+.chef-spotlight {
+    padding: 40px 0;
+}
+
+.chef-feature {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.chef-feature .image-wrapper {
+    height: 350px;
+}
+
+.chef-feature h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    margin: 15px 0;
+}
+
+.chef-feature h2 a:hover {
+    color: var(--accent-color);
+}
+
+.chef-feature .excerpt {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Recipe Tabs */
+.recipe-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.recipe-tab {
+    padding: 8px 20px;
+    border: 1px solid var(--border-color);
+    background: white;
+    cursor: pointer;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.recipe-tab:hover,
+.recipe-tab.active {
+    background: var(--text-color);
+    color: white;
+}
+
+/* Recipes Section */
+.recipes-section {
+    padding: 40px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.recipe-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.recipe-card .image-wrapper {
+    height: 200px;
+    position: relative;
+}
+
+.recipe-time {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+}
+
+.recipe-card .content {
+    padding: 20px;
+}
+
+.recipe-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.recipe-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.recipe-card p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-bottom: 10px;
+}
+
+.recipe-meta {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Secret Recipes Section */
+.secret-recipes {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.secret-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+}
+
+.secret-card.main {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.secret-card.main .image-wrapper {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.secret-card.main h4 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding: 0 25px;
+}
+
+.secret-card.main h4 a:hover {
+    color: var(--accent-color);
+}
+
+.secret-card.main p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    padding: 0 25px;
+}
+
+.secret-card.main .read-link {
+    display: block;
+    padding: 0 25px 25px;
+}
+
+.secret-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.secret-item {
+    padding: 20px;
+    background: var(--gray-light);
+    border-radius: 4px;
+}
+
+.secret-item h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.secret-item h4 a:hover {
+    color: var(--accent-color);
+}
+
+.secret-item p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+}
+
+/* Species Guide */
+.species-guide {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.section-intro-text {
+    font-size: 1.1rem;
+    color: var(--gray-medium);
+    margin-bottom: 40px;
+}
+
+.species-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.species-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.species-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.species-header h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+}
+
+.sustainability {
+    padding: 3px 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.sustainability.high { background: #d4edda; color: #155724; }
+.sustainability.medium { background: #fff3cd; color: #856404; }
+.sustainability.low { background: #f8d7da; color: #721c24; }
+
+.species-card > p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-bottom: 15px;
+}
+
+.species-details {
+    font-size: 0.85rem;
+}
+
+.species-details span {
+    display: block;
+    padding: 5px 0;
+    border-top: 1px solid #eee;
+}
+
+/* Techniques Section */
+.techniques-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.techniques-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.technique-card {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.technique-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.technique-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.technique-card p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+}
+
+/* Cuisines Section */
+.cuisines-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.cuisines-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cuisine-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.cuisine-card .image-wrapper {
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.cuisine-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.cuisine-card > p {
+    font-size: 0.85rem;
+    color: var(--gray-medium);
+    margin-bottom: 10px;
+}
+
+.cuisine-card ul {
+    font-size: 0.8rem;
+    padding-left: 15px;
+}
+
+.cuisine-card li {
+    margin-bottom: 5px;
+}
+
+/* Reviews Section */
+.reviews-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+}
+
+.review-card.featured {
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.review-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--accent-color);
+    color: white;
+    padding: 5px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.review-card .image-wrapper {
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.review-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding: 0 25px;
+}
+
+.review-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.review-rating {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 0 25px;
+}
+
+.review-card > p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    padding: 0 25px;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-item {
+    padding: 20px;
+    background: var(--gray-light);
+    border-radius: 4px;
+}
+
+.review-item h4 {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.review-item h4 a:hover {
+    color: var(--accent-color);
+}
+
+.review-item > p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.review-score {
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .chef-feature {
+        grid-template-columns: 1fr;
+    }
+    
+    .chef-feature .image-wrapper {
+        height: 300px;
+    }
+    
+    .recipes-grid,
+    .species-grid,
+    .cuisines-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .secret-grid,
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .techniques-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .recipes-grid,
+    .species-grid,
+    .cuisines-grid,
+    .techniques-grid {
+        grid-template-columns: 1fr;
+    }
+}

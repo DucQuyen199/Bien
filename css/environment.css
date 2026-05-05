@@ -1,0 +1,531 @@
+/* ==========================================
+   ENVIRONMENT PAGE STYLES - environment.html
+   ========================================== */
+
+/* Featured Article */
+.featured-article {
+    padding: 40px 0;
+}
+
+.feature-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.feature-main .image-wrapper {
+    height: 400px;
+}
+
+.feature-main h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    margin: 15px 0;
+}
+
+.feature-main h2 a:hover {
+    color: var(--accent-color);
+}
+
+.feature-main .excerpt {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Alert Banner */
+.alert-banner {
+    background: #dc3545;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+}
+
+.alert-icon {
+    font-size: 2rem;
+}
+
+.alert-content h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.alert-content p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Issues Overview */
+.issues-overview {
+    padding: 40px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.issues-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.issue-card {
+    padding: 30px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.issue-card.critical {
+    background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+    border: 1px solid #f5c6cb;
+}
+
+.issue-card.warning {
+    background: linear-gradient(135deg, #fff3cd, #ffeeba);
+    border: 1px solid #ffeeba;
+}
+
+.issue-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.issue-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.issue-stat {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.issue-card > p:last-child {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* MPA Section */
+.mpa-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.mpa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.mpa-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.mpa-card .image-wrapper {
+    height: 200px;
+}
+
+.mpa-card .content {
+    padding: 25px;
+}
+
+.mpa-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.mpa-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.mpa-card p {
+    font-size: 0.95rem;
+    color: var(--gray-medium);
+}
+
+/* Research Section */
+.research-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.research-card {
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.research-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.research-date {
+    font-size: 0.8rem;
+    color: var(--gray-medium);
+}
+
+.research-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.research-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.research-card p {
+    font-size: 0.95rem;
+    color: var(--gray-medium);
+    margin-bottom: 15px;
+}
+
+/* Climate Section */
+.climate-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.climate-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.climate-card.main {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.climate-card.main .image-wrapper {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.climate-card.main h4 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    margin: 10px 0;
+    padding: 0 25px;
+}
+
+.climate-card.main h4 a:hover {
+    color: var(--accent-color);
+}
+
+.climate-card.main p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    padding: 0 25px;
+}
+
+.climate-card.main .read-link {
+    display: block;
+    padding: 0 25px 25px;
+}
+
+.climate-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.climate-stat {
+    padding: 25px;
+    background: var(--gray-light);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.stat-unit {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-bottom: 10px;
+}
+
+.climate-stat p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Ocean Zones */
+.zones-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.zones-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.zone-card {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 20px;
+    background: linear-gradient(180deg, #e3f2fd 0%, #fff 100%);
+}
+
+.zone-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.zone-header h4 {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+}
+
+.zone-depth {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.zone-card > p {
+    font-size: 0.85rem;
+    color: var(--gray-medium);
+    margin-bottom: 15px;
+}
+
+.zone-species {
+    font-size: 0.8rem;
+    padding-left: 15px;
+}
+
+.zone-species li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.project-status {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+.project-status.success { background: #d4edda; color: #155724; }
+.project-status.warning { background: #fff3cd; color: #856404; }
+.project-status.active { background: #cce5ff; color: #004085; }
+
+.project-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.project-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-bottom: 15px;
+}
+
+.project-progress {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.progress-bar .fill {
+    height: 100%;
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+.project-progress span {
+    font-size: 0.8rem;
+    color: var(--gray-medium);
+    white-space: nowrap;
+}
+
+/* Sustainable Section */
+.sustainable-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.sustainable-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.sustainable-card {
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.sustainable-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.sustainable-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.sustainable-card p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+}
+
+/* Species Threat Section */
+.species-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.species-grid-horizontal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.threat-card {
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.threat-status {
+    display: inline-block;
+    padding: 3px 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.threat-status.critical { background: #f8d7da; color: #721c24; }
+.threat-status.endangered { background: #fff3cd; color: #856404; }
+.threat-status.vulnerable { background: #cce5ff; color: #004085; }
+
+.threat-card h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.threat-card h4 a:hover {
+    color: var(--accent-color);
+}
+
+.threat-card > p {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .feature-main,
+    .climate-grid,
+    .issues-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mpa-grid,
+    .research-grid,
+    .projects-grid,
+    .species-grid-horizontal,
+    .sustainable-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .zones-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .mpa-grid,
+    .research-grid,
+    .projects-grid,
+    .species-grid-horizontal,
+    .sustainable-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .zones-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .zones-grid {
+        grid-template-columns: 1fr;
+    }
+}
