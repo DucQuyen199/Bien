@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | AQUALIS</title>
+    <meta name="description" content="Learn about AQUALIS, our mission to explore the deep mysteries of the ocean, and the team behind the stories.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-hero {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .about-hero h1 {
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+        .about-hero p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto 80px;
+        }
+        .about-section {
+            margin-bottom: 40px;
+        }
+        .about-section h2 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+        .team-section {
+            background-color: var(--gray-light);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .team-card {
+            background: white;
+            padding: 0;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+        .team-image {
+            width: 100%;
+            height: 250px;
+            border-radius: 0;
+            margin: 0;
+            border: none;
+            overflow: hidden;
+        }
+        .team-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .team-card:hover .team-image img {
+            transform: scale(1.05);
+        }
+        .team-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .team-card .role {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-family: var(--font-serif);
+        }
+        .team-card .name {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.6rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            background-color: #fff9e6;
+            display: inline-block;
+            padding: 2px 10px;
+        }
+        .team-card .description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .team-card .email {
+            font-size: 0.85rem;
+            color: var(--gray-medium);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .team-social {
+            display: flex;
+            gap: 15px;
+            margin-top: auto;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        .team-social a {
+            color: var(--gray-medium);
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        .team-social a:hover {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 992px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ... top-bar and header remain same ... -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="date-time" id="current-date-time">
+                May 5, 2026 | 10:10 AM
+            </div>
+            <div class="top-links">
+                <a href="#">Log In</a>
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-container">
+                    <img src="logo.png" alt="AQUALIS Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">AQUALIS</span>
+                        <span class="logo-subtitle">DEEP AND CLEAR</span>
+                    </div>
+                </div>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="travel.html">TRAVEL</a></li>
+                    <li><a href="culinary.html">CULINARY</a></li>
+                    <li><a href="environment.html">ENVIRONMENT</a></li>
+                    <li><a href="people.html">PEOPLE</a></li>
+                    <li><a href="culture.html">CULTURE</a></li>
+                    <li><a href="opinion.html">OPINION</a></li>
+                    <li><a href="sea_seafood.html">FINAL</a></li>
+                    <li><a href="about.html" class="active">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>About AQUALIS</h1>
+                <p>Gaze beyond the surface</p>
+            </div>
+        </section>
+
+        <section class="container about-content">
+            <div class="about-section">
+                <h2>Who We Are</h2>
+                <p>AQUALIS is an online journalism platform committed to exploring the stories that lie beyond the headlines. We believe the ocean is more than just a resource; it's a living, breathing part of our identity and our future. This is the platform where you can slow down, look deeper, and uncover the extraordinary stories happening in our blue world.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>Our Mission</h2>
+                <p>Ever got tired of scrolling through headlines that only told half the story? At AQUALIS, journalism is no longer about being first; it's about being fair and insightful. We started AQUALIS because our mission is to question the usual narratives, give space to underrepresented voices, and provide context so readers can see the full picture of our relationship with the sea.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>Join Our Journey</h2>
+                <p>At AQUALIS, we are constantly seeking new perspectives, collaborations, and curious minds who share our vision of thoughtful journalism. If you have stories that matter or ideas that spark change, we invite you to join us as contributors or partners in our quest to keep the ocean's stories deep and clear.</p>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <h2 class="section-title">Our Team</h2>
+                <div class="team-grid">
+                    <!-- Member 1 -->
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="z7792811495625_8df5504dca3ac0a0e0105770a482c6fb.jpg" alt="Vu Thi Tra Giang">
+                        </div>
+                        <div class="team-info">
+                            <p class="role">Editor-in-Chief</p>
+                            <h3 class="name">Vu Thi Tra Giang</h3>
+                            <p class="description">Guides the creative vision of AQUALIS, shaping stories with clarity, depth, and a gentle sense of purpose. Creates coherence across every piece, ensuring each article carries the soul and intention of our craft.</p>
+                            <div class="team-social">
+                                <a href="#" title="LinkedIn">LinkedIn</a>
+                                <a href="#" title="Facebook">Facebook</a>
+                                <a href="mailto:vuthitragiang@example.com" title="Email">Email</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Member 2 -->
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="z7792811489590_c745803e6c28c699e1d181a22738aabf.jpg" alt="Vo Nguyen Doan Trang">
+                        </div>
+                        <div class="team-info">
+                            <p class="role">Web Operations</p>
+                            <h3 class="name">Vo Nguyen Doan Trang</h3>
+                            <p class="description">Maintains the heartbeat of the website, ensuring every page flows smoothly and every experience feels effortless. Supports the team with steady care, keeping the digital space welcoming and beautifully functional.</p>
+                            <div class="team-social">
+                                <a href="#" title="LinkedIn">LinkedIn</a>
+                                <a href="#" title="Facebook">Facebook</a>
+                                <a href="mailto:vonguyendoantrang@example.com" title="Email">Email</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Member 3 -->
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="z7792811481584_265d3a0960df9849e5de818de64fdc76.jpg" alt="Trinh Ngoc Anh">
+                        </div>
+                        <div class="team-info">
+                            <p class="role">Editor</p>
+                            <h3 class="name">Trinh Ngoc Anh</h3>
+                            <p class="description">Bridges languages with precision and sensitivity, preserving the nuance and emotion of each article. Helps our stories travel farther, reaching readers beyond linguistic borders.</p>
+                            <div class="team-social">
+                                <a href="#" title="LinkedIn">LinkedIn</a>
+                                <a href="#" title="Facebook">Facebook</a>
+                                <a href="mailto:trinhngocanh@example.com" title="Email">Email</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Member 4 -->
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="z7792811438006_f6ef20c4a34c73f26a1d4018d95a0bab.jpg" alt="Nguyen Do Minh Tan">
+                        </div>
+                        <div class="team-info">
+                            <p class="role">Editor</p>
+                            <h3 class="name">Nguyen Do Minh Tan</h3>
+                            <p class="description">Bridges languages with precision and sensitivity, preserving the nuance and emotion of each article. Helps our stories travel farther, reaching readers beyond linguistic borders.</p>
+                            <div class="team-social">
+                                <a href="#" title="LinkedIn">LinkedIn</a>
+                                <a href="#" title="Facebook">Facebook</a>
+                                <a href="mailto:nguyendominhtan1008@gmail.com" title="Email">Email</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Member 5 -->
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="z7792811382922_4a0a0a67592ca86f84fe98f13cdc219f.jpg" alt="Mai Hong Quan">
+                        </div>
+                        <div class="team-info">
+                            <p class="role">Editor</p>
+                            <h3 class="name">Mai Hong Quan</h3>
+                            <p class="description">Bridges languages with precision and sensitivity, preserving the nuance and emotion of each article. Helps our stories travel farther, reaching readers beyond linguistic borders.</p>
+                            <div class="team-social">
+                                <a href="#" title="LinkedIn">LinkedIn</a>
+                                <a href="#" title="Facebook">Facebook</a>
+                                <a href="mailto:Godiemadafaka9@gmail.com" title="Email">Email</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="newsletter">
+        <div class="container">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the most captivating stories about the sea delivered to your inbox every week.</p>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h2>AQUALIS</h2>
+                    <p>Deep and Clear</p>
+                    <p class="copyright">© 2026 by Ocean & Seafood. An Inkside Publication.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="travel.html">Travel</a></li>
+                        <li><a href="culinary.html">Culinary</a></li>
+                        <li><a href="environment.html">Environment</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="opinion.html">Opinion</a></li>
+                        <li><a href="sea_seafood.html">Final</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

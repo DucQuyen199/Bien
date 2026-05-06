@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OCEAN & SEAFOOD | Inkside Magazine</title>
-    <meta name="description" content="Explore the deep mysteries of the ocean, the finest seafood culinary arts, and the stories of the people who call the coast their home.">
+    <title>AQUALIS | Deep and Clear</title>
+    <meta name="description"
+        content="Explore the deep mysteries of the ocean, the finest seafood culinary arts, and the stories of the people who call the coast their home.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <div class="top-bar">
         <div class="container">
-            <div class="date-time" id="current-date-time">
-                May 5, 2026 | 10:10 AM
+            <div class="top-bar-left">
+                <div class="date-time" id="current-date-time">
+                    May 5, 2026 | 10:10 AM
+                </div>
+                <div class="top-ticker">
+                    <span>⚡ FREE WORLDWIDE SHIPPING ON ALL SEAFOOD ORDERS OVER $150</span>
+                </div>
             </div>
             <div class="top-links">
                 <a href="#">Log In</a>
-                <a href="#">Subscribe</a>
+                <a href="#" class="btn-subscribe-top">Subscribe</a>
             </div>
         </div>
     </div>
@@ -27,8 +37,13 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1 id="site-logo"><a href="index.html">OCEAN & SEAFOOD</a></h1>
-                <p class="subtitle">A PREMIUM JOURNAL ON MARINE CULTURE & CULINARY</p>
+                <div class="logo-container">
+                    <img src="logo.png" alt="AQUALIS Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">AQUALIS</span>
+                        <span class="logo-subtitle">DEEP AND CLEAR</span>
+                    </div>
+                </div>
             </div>
             <nav id="main-nav">
                 <ul>
@@ -39,6 +54,9 @@
                     <li><a href="people.html">PEOPLE</a></li>
                     <li><a href="culture.html">CULTURE</a></li>
                     <li><a href="opinion.html">OPINION</a></li>
+                    <li><a href="seafood_landing.html">SEAFOOD</a></li>
+                    <li><a href="sea_seafood.html">FINAL</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,9 +73,12 @@
                     </div>
                     <div class="content">
                         <span class="category">EXPLORATION</span>
-                        <h2><a href="#" class="read-article" data-article="deep-blue">The Deep Blue Mystery: A Journey to the Uncharted Abyssal Zones</a></h2>
+                        <h2><a href="#" class="read-article" data-article="deep-blue">The Deep Blue Mystery: A Journey
+                                to the Uncharted Abyssal Zones</a></h2>
                         <p class="meta">By Julian Reed | 5 min read</p>
-                        <p class="excerpt">New coral reefs, bioluminescent creatures never before named, and the ancient secrets of Earth's formation are slowly emerging from the deepest trenches of our planet. Our team joins the latest expedition into the Mariana Trench...</p>
+                        <p class="excerpt">New coral reefs, bioluminescent creatures never before named, and the ancient
+                            secrets of Earth's formation are slowly emerging from the deepest trenches of our planet.
+                            Our team joins the latest expedition into the Mariana Trench...</p>
                         <a href="#" class="read-more read-article" data-article="deep-blue">Continue Reading →</a>
                     </div>
                 </article>
@@ -67,7 +88,24 @@
             <section class="breaking-news">
                 <div class="breaking-label">BREAKING</div>
                 <div class="breaking-content">
-                    <p>Marine Scientists Discover New Species of Giant Squid in the Gulf of Mexico - <a href="#">Read More</a></p>
+                    <p>Marine Scientists Discover New Species of Giant Squid in the Gulf of Mexico - <a href="#">Read
+                            More</a></p>
+                </div>
+            </section>
+
+            <!-- PROMOTIONAL AD BANNER -->
+            <section class="promo-ad-banner">
+                <div class="promo-container">
+                    <div class="promo-content">
+                        <span class="promo-tag">LIMITED OFFER</span>
+                        <h2>Experience the Abyssal Luxury</h2>
+                        <p>Book your exclusive underwater dining experience at the Mariana Trench Base. Limited slots
+                            available for the 2026 season.</p>
+                        <a href="#" class="promo-btn">RESERVE NOW</a>
+                    </div>
+                    <div class="promo-image">
+                        <img src="premium_underwater_experience_1778049897129.png" alt="Underwater Luxury">
+                    </div>
                 </div>
             </section>
 
@@ -75,16 +113,18 @@
                 <!-- Latest News Column -->
                 <div class="latest-news">
                     <h3 class="section-title">The Latest</h3>
-                    
+
                     <article class="news-item">
                         <div class="image-wrapper">
                             <img src="seafood_platter_magazine_1777952036710.png" alt="Seafood Culinary">
                         </div>
                         <div class="content">
                             <span class="category">CULINARY</span>
-                            <h4><a href="#" class="read-article" data-article="culinary-secrets">Culinary Excellence: 5 Secret Seafood Recipes from Remote Coastal Villages</a></h4>
+                            <h4><a href="#" class="read-article" data-article="culinary-secrets">Culinary Excellence: 5
+                                    Secret Seafood Recipes from Remote Coastal Villages</a></h4>
                             <p class="meta">Dec 9 . 8 min read</p>
-                            <p class="summary">From the salt-crusted techniques of the Mediterranean to the spicy, aromatic broths of Southeast Asia...</p>
+                            <p class="summary">From the salt-crusted techniques of the Mediterranean to the spicy,
+                                aromatic broths of Southeast Asia...</p>
                         </div>
                     </article>
 
@@ -94,57 +134,69 @@
                         </div>
                         <div class="content">
                             <span class="category">TRAVEL</span>
-                            <h4><a href="#" class="read-article" data-article="hidden-gems">The "Hidden Gems" of the World's Coastlines You've Never Heard Of</a></h4>
+                            <h4><a href="#" class="read-article" data-article="hidden-gems">The "Hidden Gems" of the
+                                    World's Coastlines You've Never Heard Of</a></h4>
                             <p class="meta">Dec 7 . 12 min read</p>
-                            <p class="summary">Escape the crowds and discover the secluded turquoise bays that remain untouched by modern tourism...</p>
+                            <p class="summary">Escape the crowds and discover the secluded turquoise bays that remain
+                                untouched by modern tourism...</p>
                         </div>
                     </article>
 
                     <article class="news-item">
                         <div class="image-wrapper">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTns4x_dyqtVz6dl7UsxqoTQ1XWFQ5trTAQhg&s" alt="Sustainable Fishing">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTns4x_dyqtVz6dl7UsxqoTQ1XWFQ5trTAQhg&s"
+                                alt="Sustainable Fishing">
                         </div>
                         <div class="content">
                             <span class="category">ENVIRONMENT</span>
-                            <h4><a href="#" class="read-article" data-article="future-fishing">The Future of Fishing: Can AI Help Restore Our Ocean's Fish Populations?</a></h4>
+                            <h4><a href="#" class="read-article" data-article="future-fishing">The Future of Fishing:
+                                    Can AI Help Restore Our Ocean's Fish Populations?</a></h4>
                             <p class="meta">Dec 5 . 6 min read</p>
-                            <p class="summary">New AI-powered monitoring systems are revolutionizing sustainable fishing practices worldwide...</p>
+                            <p class="summary">New AI-powered monitoring systems are revolutionizing sustainable fishing
+                                practices worldwide...</p>
                         </div>
                     </article>
 
                     <article class="news-item">
                         <div class="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=800&q=80" alt="Coastal Culture">
+                            <img src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=800&q=80"
+                                alt="Coastal Culture">
                         </div>
                         <div class="content">
                             <span class="category">CULTURE</span>
-                            <h4><a href="#" class="read-article" data-article="fishing-traditions">Ancient Fishing Traditions That Still Survive Today</a></h4>
+                            <h4><a href="#" class="read-article" data-article="fishing-traditions">Ancient Fishing
+                                    Traditions That Still Survive Today</a></h4>
                             <p class="meta">Dec 3 . 10 min read</p>
-                            <p class="summary">From the wooden dhoni boats of the Maldives to the fish traps of Portugal's Algarve coast...</p>
+                            <p class="summary">From the wooden dhoni boats of the Maldives to the fish traps of
+                                Portugal's Algarve coast...</p>
                         </div>
                     </article>
 
                     <article class="news-item">
                         <div class="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Beach Paradise">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="Beach Paradise">
                         </div>
                         <div class="content">
                             <span class="category">TRAVEL</span>
                             <h4><a href="#">10 Underwater Hotels That Will Take Your Breath Away</a></h4>
                             <p class="meta">Dec 1 . 7 min read</p>
-                            <p class="summary">Sleep alongside marine life in these incredible underwater accommodations around the world...</p>
+                            <p class="summary">Sleep alongside marine life in these incredible underwater accommodations
+                                around the world...</p>
                         </div>
                     </article>
 
                     <article class="news-item">
                         <div class="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Marine Conservation">
+                            <img src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="Marine Conservation">
                         </div>
                         <div class="content">
                             <span class="category">ENVIRONMENT</span>
                             <h4><a href="#">Ocean Cleanup Project Removes 100,000 Tons of Plastic in 2025</a></h4>
                             <p class="meta">Nov 28 . 5 min read</p>
-                            <p class="summary">The ambitious initiative reaches a major milestone in the fight against marine pollution...</p>
+                            <p class="summary">The ambitious initiative reaches a major milestone in the fight against
+                                marine pollution...</p>
                         </div>
                     </article>
                 </div>
@@ -152,7 +204,7 @@
                 <!-- Opinion Sidebar -->
                 <aside class="opinion">
                     <h3 class="section-title">Opinion</h3>
-                    
+
                     <div class="opinion-item">
                         <span class="category">EDITORIAL</span>
                         <h4><a href="#">Sustainable Seafood: Why this is the only path to saving our oceans</a></h4>
@@ -161,7 +213,8 @@
 
                     <div class="opinion-item">
                         <span class="category">GLOBAL WATCH</span>
-                        <h4><a href="#">Ocean Plastic: Is it an endless war or just our collective indifference?</a></h4>
+                        <h4><a href="#">Ocean Plastic: Is it an endless war or just our collective indifference?</a>
+                        </h4>
                         <p class="author">Michael Chen</p>
                     </div>
 
@@ -196,7 +249,8 @@
                 <h3 class="section-title">Featured Destinations</h3>
                 <div class="destinations-grid">
                     <article class="destination-card large">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Maldives">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                            alt="Maldives">
                         <div class="destination-overlay">
                             <span class="category">TRAVEL</span>
                             <h4>Maldives</h4>
@@ -204,33 +258,57 @@
                         </div>
                     </article>
                     <article class="destination-card">
-                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Phuket">
+                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Phuket">
                         <div class="destination-overlay">
                             <span class="category">TRAVEL</span>
                             <h4>Phuket, Thailand</h4>
                         </div>
                     </article>
                     <article class="destination-card">
-                        <img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Palawan">
+                        <img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Palawan">
                         <div class="destination-overlay">
                             <span class="category">TRAVEL</span>
                             <h4>Palawan, Philippines</h4>
                         </div>
                     </article>
                     <article class="destination-card">
-                        <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Santorini">
+                        <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Santorini">
                         <div class="destination-overlay">
                             <span class="category">TRAVEL</span>
                             <h4>Santorini, Greece</h4>
                         </div>
                     </article>
                     <article class="destination-card">
-                        <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Bali">
+                        <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Bali">
                         <div class="destination-overlay">
                             <span class="category">TRAVEL</span>
                             <h4>Bali, Indonesia</h4>
                         </div>
                     </article>
+                </div>
+            </section>
+
+            <!-- IMPACT STATS (Filler) -->
+            <section class="impact-stats">
+                <div class="stat-item">
+                    <span class="stat-number">71%</span>
+                    <span class="stat-label">OCEAN COVERAGE</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5M+</span>
+                    <span class="stat-label">SPECIES DISCOVERED</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10k+</span>
+                    <span class="stat-label">COASTAL HEROES</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">COMMITMENT</span>
                 </div>
             </section>
 
@@ -240,27 +318,34 @@
                 <div class="stories-grid">
                     <article class="story-card">
                         <div class="image-wrapper">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSueRcR3aabu3RT0wNSPEG2LMHQZWTsFZUTA&s" alt="Coral Reef">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSueRcR3aabu3RT0wNSPEG2LMHQZWTsFZUTA&s"
+                                alt="Coral Reef">
                         </div>
                         <span class="category">SCIENCE</span>
-                        <h4><a href="#" class="read-article" data-article="great-barrier-reef">The Great Barrier Reef's surprising recovery in Northern sectors</a></h4>
-                        <p class="summary">Despite decades of decline, scientists are witnessing unexpected regeneration in Australia's iconic reef system.</p>
+                        <h4><a href="#" class="read-article" data-article="great-barrier-reef">The Great Barrier Reef's
+                                surprising recovery in Northern sectors</a></h4>
+                        <p class="summary">Despite decades of decline, scientists are witnessing unexpected regeneration
+                            in Australia's iconic reef system.</p>
                     </article>
                     <article class="story-card">
                         <div class="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Luxury Seafood">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="Luxury Seafood">
                         </div>
                         <span class="category">LIFESTYLE</span>
                         <h4><a href="#">The rise of ultra-luxury seafood experiences in Singapore</a></h4>
-                        <p class="summary">From celebrity chef restaurants to exclusive omakase counters, Singapore redefines seafood dining.</p>
+                        <p class="summary">From celebrity chef restaurants to exclusive omakase counters, Singapore
+                            redefines seafood dining.</p>
                     </article>
                     <article class="story-card">
                         <div class="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tech">
+                            <img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="Tech">
                         </div>
                         <span class="category">TECH</span>
                         <h4><a href="#">Blockchain technology to track tuna from boat to plate</a></h4>
-                        <p class="summary">New traceability systems are bringing transparency to the seafood supply chain.</p>
+                        <p class="summary">New traceability systems are bringing transparency to the seafood supply
+                            chain.</p>
                     </article>
                 </div>
             </section>
@@ -271,12 +356,14 @@
                 <div class="spotlight-grid">
                     <article class="spotlight-card">
                         <div class="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Lobster">
+                            <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                                alt="Lobster">
                         </div>
                         <div class="content">
                             <span class="category">SPECIES</span>
                             <h4>Maine Lobster: The Gold Standard of American Seafood</h4>
-                            <p>Everything you need to know about catching, cooking, and savoring the Atlantic lobster.</p>
+                            <p>Everything you need to know about catching, cooking, and savoring the Atlantic lobster.
+                            </p>
                             <a href="#" class="read-link">Learn More →</a>
                         </div>
                     </article>
@@ -287,19 +374,23 @@
                         <div class="content">
                             <span class="category">SPECIES</span>
                             <h4>Wild vs. Farmed Salmon: The Great Debate</h4>
-                            <p>Understanding the differences between wild-caught and farmed salmon for your health and the environment.</p>
+                            <p>Understanding the differences between wild-caught and farmed salmon for your health and
+                                the environment.</p>
                             <a href="#" class="read-link read-article" data-article="culinary-1">Learn More →</a>
                         </div>
                     </article>
                     <article class="spotlight-card">
                         <div class="image-wrapper">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM6eRmfl-Jk6A9ydphMrKA2jsTcN937FT8DA&s" alt="Oysters">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM6eRmfl-Jk6A9ydphMrKA2jsTcN937FT8DA&s"
+                                alt="Oysters">
                         </div>
                         <div class="content">
                             <span class="category">SPECIES</span>
                             <h4>The Art of Oyster Appreciation</h4>
-                            <p>A beginner's guide to understanding and enjoying different oyster varieties from around the world.</p>
-                            <a href="#" class="read-link read-article" data-article="oyster-appreciation">Learn More →</a>
+                            <p>A beginner's guide to understanding and enjoying different oyster varieties from around
+                                the world.</p>
+                            <a href="#" class="read-link read-article" data-article="oyster-appreciation">Learn More
+                                →</a>
                         </div>
                     </article>
                 </div>
@@ -316,11 +407,12 @@
                         <div class="content">
                             <span class="category">PROFILE</span>
                             <h4><a href="#">A Life on the Waves: The quiet resilience of Ha Long Bay's elders</a></h4>
-                            <p class="excerpt">Mr. Sau has spent 40 years on a wooden boat, facing storms and solitude to raise a family. Now, he watches as his world changes around him...</p>
+                            <p class="excerpt">Mr. Sau has spent 40 years on a wooden boat, facing storms and solitude
+                                to raise a family. Now, he watches as his world changes around him...</p>
                             <a href="#" class="read-link">Read Story →</a>
                         </div>
                     </article>
-                    
+
                     <div class="sub-people-list">
                         <article class="news-item small">
                             <h4><a href="#">The last female divers of the Jeju islands: A legacy under water</a></h4>
@@ -352,12 +444,14 @@
                 <div class="environment-grid">
                     <article class="env-card main">
                         <div class="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ocean Plastic">
+                            <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="Ocean Plastic">
                         </div>
                         <div class="content">
                             <span class="category">CRISIS</span>
                             <h4>Microplastics Found in 94% of Bottled Water Brands Worldwide</h4>
-                            <p class="excerpt">A comprehensive global study reveals the alarming extent of microplastic contamination in everyday water sources.</p>
+                            <p class="excerpt">A comprehensive global study reveals the alarming extent of microplastic
+                                contamination in everyday water sources.</p>
                         </div>
                     </article>
                     <div class="env-cards">
@@ -386,25 +480,28 @@
                 <h3 class="section-title">Watch & Learn</h3>
                 <div class="video-grid">
                     <article class="video-card">
-                        <div class="video-wrapper">
-                            <img src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Video Thumbnail">
-                            <div class="play-button">▶</div>
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/hLiu6VJzG8s" title="Video 1" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <h4>The Migration of the Humpback Whale</h4>
                         <p class="meta">Documentary | 45 min</p>
                     </article>
                     <article class="video-card">
-                        <div class="video-wrapper">
-                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Video Thumbnail">
-                            <div class="play-button">▶</div>
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/U_HUiC1dP00" title="Video 2" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <h4>Inside a Blue Whale's Heart</h4>
                         <p class="meta">Science Feature | 12 min</p>
                     </article>
                     <article class="video-card">
-                        <div class="video-wrapper">
-                            <img src="https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Video Thumbnail">
-                            <div class="play-button">▶</div>
+                        <div class="video-embed">
+                            <iframe src="https://www.youtube.com/embed/9FqwhW0B3tY" title="Video 3" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <h4>Making of: World's Freshest Sushi</h4>
                         <p class="meta">Culinary | 25 min</p>
@@ -418,7 +515,8 @@
                 <div class="heritage-grid">
                     <article class="heritage-card">
                         <div class="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Traditional Boat">
+                            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                                alt="Traditional Boat">
                         </div>
                         <span class="category">TRADITION</span>
                         <h4>The Vanishing Art of Wooden Boat Building in Vietnam</h4>
@@ -426,7 +524,8 @@
                     </article>
                     <article class="heritage-card">
                         <div class="image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Fishing Village">
+                            <img src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                                alt="Fishing Village">
                         </div>
                         <span class="category">CULTURE</span>
                         <h4>Sea Gypsies: The Last Nomadic Ocean Dwellers</h4>
@@ -434,10 +533,12 @@
                     </article>
                     <article class="heritage-card">
                         <div class="image-wrapper">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3u_z3EVPvHjvWNz3IoIvqaNNS-2xXD75Iw&s" alt="Lighthouse">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3u_z3EVPvHjvWNz3IoIvqaNNS-2xXD75Iw&s"
+                                alt="Lighthouse">
                         </div>
                         <span class="category">HISTORY</span>
-                        <h4><a href="#" class="read-article" data-article="culture-1">Lighthouses of the Atlantic: Sentinels of the Sea</a></h4>
+                        <h4><a href="#" class="read-article" data-article="culture-1">Lighthouses of the Atlantic:
+                                Sentinels of the Sea</a></h4>
                         <p>The history and preservation efforts of America's iconic coastal lighthouses.</p>
                     </article>
                 </div>
@@ -450,9 +551,16 @@
                     <div class="science-content">
                         <span class="category">RESEARCH</span>
                         <h4>Scientists Discover New Deep-Sea Creatures That Generate Their Own Light</h4>
-                        <p class="excerpt">A research expedition to the Mariana Trench has uncovered over 30 new species of bioluminescent organisms, including a fish with a transparent head and eyes that point upward.</p>
-                        <p>In a groundbreaking discovery that challenges our understanding of evolution, marine biologists have documented these remarkable creatures living at depths of over 3,000 meters, where sunlight never penetrates. The creatures use bioluminescence not just for communication and mating, but also as an ingenious hunting strategy.</p>
-                        <p>"We've seen similar adaptations in shallow-water species, but the complexity and diversity of bioluminescent systems in these deep-sea environments is truly remarkable," says Dr. Patricia Winger of the Scripps Institution of Oceanography.</p>
+                        <p class="excerpt">A research expedition to the Mariana Trench has uncovered over 30 new species
+                            of bioluminescent organisms, including a fish with a transparent head and eyes that point
+                            upward.</p>
+                        <p>In a groundbreaking discovery that challenges our understanding of evolution, marine
+                            biologists have documented these remarkable creatures living at depths of over 3,000 meters,
+                            where sunlight never penetrates. The creatures use bioluminescence not just for
+                            communication and mating, but also as an ingenious hunting strategy.</p>
+                        <p>"We've seen similar adaptations in shallow-water species, but the complexity and diversity of
+                            bioluminescent systems in these deep-sea environments is truly remarkable," says Dr.
+                            Patricia Winger of the Scripps Institution of Oceanography.</p>
                         <a href="#" class="read-link">Continue Reading →</a>
                     </div>
                     <div class="science-sidebar">
@@ -464,6 +572,33 @@
                             <li><a href="#">Seahorse Genome Mapping Could Revolutionize Medicine</a></li>
                             <li><a href="#">Shark Teeth Point to New Species in Pacific</a></li>
                         </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CULINARY SHOWCASE (Advertisement Style) -->
+            <section class="culinary-showcase">
+                <div class="culinary-grid">
+                    <div class="culinary-image">
+                        <img src="premium_seafood_platter_1778049921889.png" alt="Grand Seafood Platter">
+                    </div>
+                    <div class="culinary-details">
+                        <span class="category">PREMIUM CULINARY</span>
+                        <h2>The Grand Imperial Platter</h2>
+                        <p>Taste the ocean's finest treasures. Our seasonal platter features wild-caught blue lobster,
+                            hand-shucked Pacific oysters, and Alaskan King Crab, served with our signature
+                            seaweed-infused butter.</p>
+                        <div class="feature-list">
+                            <div class="feature">
+                                <strong>100% Sustainable</strong>
+                                <span>Responsibly sourced from certified waters</span>
+                            </div>
+                            <div class="feature">
+                                <strong>Fresh Daily</strong>
+                                <span>Delivered from dock to table within 12 hours</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-primary">EXPLORE MENU</a>
                     </div>
                 </div>
             </section>
@@ -484,26 +619,46 @@
 
             <div class="article-content">
                 <div class="article-body" id="art-body">
-                    <p class="lead">The ocean covers more than 70% of our planet's surface, yet over 80% of it remains unmapped, unobserved, and unexplored. In the deepest reaches of the Mariana Trench, life persists in ways that challenge our very understanding of biology.</p>
-                    
-                    <p>Recently, a team of international oceanographers embarked on a 3-month expedition into the Philippine Sea. What they found was not just a desolate wasteland of sand and rock, but a vibrant, albeit alien, ecosystem powered by hydrothermal vents and chemical energy rather than sunlight.</p>
-                    
-                    <h3>The Bioluminescent Frontier</h3>
-                    <p>As our submersible descended past 4,000 meters into the "Abyssal Zone," the world outside the reinforced acrylic dome turned into a dance of phantom lights. Species of jellyfish that resemble floating chandeliers pulsed with electric blues and violets. We encountered a new species of Siphonophore—a colonial organism that can reach lengths of over 40 meters, making it potentially the longest animal on Earth.</p>
-                    
-                    <blockquote>"We aren't just looking at new species; we are looking at a new way to live. The pressure here is enough to crush a luxury car, yet these creatures move with a grace that is almost haunting." — Dr. Elena Vance</blockquote>
+                    <p class="lead">The ocean covers more than 70% of our planet's surface, yet over 80% of it remains
+                        unmapped, unobserved, and unexplored. In the deepest reaches of the Mariana Trench, life
+                        persists in ways that challenge our very understanding of biology.</p>
 
-                    <p>The significance of these findings extends beyond mere curiosity. The microbes found near these volcanic vents are being studied for potential breakthroughs in medical science, specifically in the treatment of extreme viral infections. The ocean is not just our past; it is the key to our future survival.</p>
+                    <p>Recently, a team of international oceanographers embarked on a 3-month expedition into the
+                        Philippine Sea. What they found was not just a desolate wasteland of sand and rock, but a
+                        vibrant, albeit alien, ecosystem powered by hydrothermal vents and chemical energy rather than
+                        sunlight.</p>
+
+                    <h3>The Bioluminescent Frontier</h3>
+                    <p>As our submersible descended past 4,000 meters into the "Abyssal Zone," the world outside the
+                        reinforced acrylic dome turned into a dance of phantom lights. Species of jellyfish that
+                        resemble floating chandeliers pulsed with electric blues and violets. We encountered a new
+                        species of Siphonophore—a colonial organism that can reach lengths of over 40 meters, making it
+                        potentially the longest animal on Earth.</p>
+
+                    <blockquote>"We aren't just looking at new species; we are looking at a new way to live. The
+                        pressure here is enough to crush a luxury car, yet these creatures move with a grace that is
+                        almost haunting." — Dr. Elena Vance</blockquote>
+
+                    <p>The significance of these findings extends beyond mere curiosity. The microbes found near these
+                        volcanic vents are being studied for potential breakthroughs in medical science, specifically in
+                        the treatment of extreme viral infections. The ocean is not just our past; it is the key to our
+                        future survival.</p>
 
                     <h3>The Chemical Energy Revolution</h3>
-                    <p>Unlike surface ecosystems that rely on photosynthesis, the deep-sea communities around hydrothermal vents are built on chemosynthesis. Here, bacteria oxidize hydrogen sulfide and methane emitted from the vents, creating an entirely separate food web. This discovery has profound implications for our understanding of how life might exist on other worlds with similar conditions—Europa, Enceladus, and even early Mars.</p>
+                    <p>Unlike surface ecosystems that rely on photosynthesis, the deep-sea communities around
+                        hydrothermal vents are built on chemosynthesis. Here, bacteria oxidize hydrogen sulfide and
+                        methane emitted from the vents, creating an entirely separate food web. This discovery has
+                        profound implications for our understanding of how life might exist on other worlds with similar
+                        conditions—Europa, Enceladus, and even early Mars.</p>
 
                     <div class="article-gallery">
                         <img src="coastal_hidden_gem_1777952070037.png" alt="Gallery Image 1">
                         <img src="seafood_platter_magazine_1777952036710.png" alt="Gallery Image 2">
                     </div>
 
-                    <p>As we concluded our expedition, the team left with more questions than answers. The deep ocean remains the final frontier of Earth, a vast and silent cathedral that demands our respect and, more importantly, our protection.</p>
+                    <p>As we concluded our expedition, the team left with more questions than answers. The deep ocean
+                        remains the final frontier of Earth, a vast and silent cathedral that demands our respect and,
+                        more importantly, our protection.</p>
                 </div>
 
                 <div class="article-footer">
@@ -527,21 +682,24 @@
                                 <span class="username">Mark Sullivan</span>
                                 <span class="date">May 5, 2026</span>
                             </div>
-                            <p class="comment-text">Absolutely fascinating. It's crazy to think that we know more about the surface of Mars than our own ocean floor. Great piece!</p>
+                            <p class="comment-text">Absolutely fascinating. It's crazy to think that we know more about
+                                the surface of Mars than our own ocean floor. Great piece!</p>
                         </div>
                         <div class="comment">
                             <div class="comment-header">
                                 <span class="username">Linda K.</span>
                                 <span class="date">May 6, 2026</span>
                             </div>
-                            <p class="comment-text">The mention of Siphonophores is great. I wish there were more high-res photos of them! Looking forward to the next part of this series.</p>
+                            <p class="comment-text">The mention of Siphonophores is great. I wish there were more
+                                high-res photos of them! Looking forward to the next part of this series.</p>
                         </div>
                         <div class="comment">
                             <div class="comment-header">
                                 <span class="username">MarineLover_99</span>
                                 <span class="date">May 6, 2026</span>
                             </div>
-                            <p class="comment-text">How do these expeditions affect the environment they are studying? Is there a risk of contamination?</p>
+                            <p class="comment-text">How do these expeditions affect the environment they are studying?
+                                Is there a risk of contamination?</p>
                         </div>
                     </div>
 
@@ -577,8 +735,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <h2>OCEAN & SEAFOOD</h2>
-                    <p>A PREMIUM JOURNAL ON MARINE CULTURE & CULINARY</p>
+                    <h2>AQUALIS</h2>
+                    <p>Deep and Clear</p>
                     <p class="copyright">© 2026 by Ocean & Seafood. An Inkside Publication.</p>
                 </div>
                 <div class="footer-nav">
@@ -590,12 +748,14 @@
                         <li><a href="people.html">People</a></li>
                         <li><a href="culture.html">Culture</a></li>
                         <li><a href="opinion.html">Opinion</a></li>
+                        <li><a href="sea_seafood.html">Final</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-nav">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Advertise</a></li>
                         <li><a href="#">Privacy Policy</a></li>
@@ -615,6 +775,18 @@
         </div>
     </footer>
 
+    <!-- FLOATING ACTION CARD -->
+    <div class="floating-ad" id="floating-ad">
+        <button class="close-ad" onclick="document.getElementById('floating-ad').style.display='none'">&times;</button>
+        <div class="ad-content">
+            <span class="ad-label">NEW ARTICLE</span>
+            <h4>Secrets of the Deep</h4>
+            <p>Unlock premium underwater footage.</p>
+            <a href="#" class="ad-link">GO PREMIUM →</a>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
